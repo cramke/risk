@@ -6,7 +6,7 @@ PostGIS runs in the official docker image under Windows, while this SW runs in W
 2. Settings - Ressources - WSL - (activate respective wsl)
 3. To verify installation: WSL -> docker --version
 4. To clone docker image: WSL -> docker pull postgis/postgis
-5. Run docker image: WSL -> docker run --name some-postgis -e POSTGRES_PASSWORD=postgis -d postgis/postgis
+5. Run docker image: WSL -> docker run --name some-postgis -e POSTGRES_PASSWORD=postgis -d -p 5432:5432 postgis/postgis
 6. Connect with psql to database: WSL -> docker exec -ti some-postgis psql -U postgres
 
 ## Create Table 
