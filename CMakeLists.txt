@@ -8,6 +8,10 @@ include_directories(/usr/include/ompl/
                     /usr/include/eigen3/
                     /usr/include/pqxx/)
 
+add_subdirectory(
+    src/data
+)                
+
 add_executable(risk src/main.cpp)
 TARGET_LINK_LIBRARIES(risk -lpqxx -lpq)
 

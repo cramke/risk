@@ -12,8 +12,6 @@
 #include <iostream>
 #include <stdlib.h>
 
-#include <pqxx/pqxx>
-
 #include <ompl/control/SpaceInformation.h>
 #include <ompl/base/goals/GoalState.h>
 #include <ompl/base/spaces/SE2StateSpace.h>
@@ -24,3 +22,5 @@
 #include <ompl/config.h>
 #include <valarray>
 #include <limits>
+
+#include "src\dta\postgis.hpp"
